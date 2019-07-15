@@ -1,0 +1,18 @@
+
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 15px 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+
+.shop {
+    margin: 0 75px 10px 0;
+}
