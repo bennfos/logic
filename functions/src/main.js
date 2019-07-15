@@ -1,4 +1,4 @@
-//PRACTICE #1
+// PRACTICE #1
 
     // for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
     //     if (currentNumber % 5 === 0 && currentNumber % 7 === 0) {
@@ -14,22 +14,21 @@
 
 
 // PRACTICE #2
-    // let bandNumber = 1
+    let bandNumber = 1
 
 
-    // const takeNumber = function (name) {
-    //     return `${bandNumber++}. ${name}`
-    //     }
+    const takeNumber =  (name) => {
+        `${bandNumber++}. ${name}`
+        }
 
+    const scum = takeNumber("Galactic Scum")
+    console.log(scum)  // This should print "1. Galactic Scum" in the console
 
-    // const scum = takeNumber("Galactic Scum")
-    // console.log(scum)  // This should print "1. Galactic Scum" in the console
+    const under = takeNumber("Underdogs")
+    console.log(under);
 
-    // const under = takeNumber("Underdogs")
-    // console.log(under);
-
-    // const chem = takeNumber("Chemical Pixies")
-    // console.log(chem);
+    const chem = takeNumber("Chemical Pixies")
+    console.log(chem);
 
 
 // PRACTICE #3
