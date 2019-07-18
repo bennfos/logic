@@ -1,0 +1,21 @@
+#contactList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.contact {
+    width: 310px;
+    height: 140px;
+    border: 8px solid grey;
+    border-style: outset;
+    margin: 40px;
+    padding: 20px;
+}
+
+.contact:hover {
+    background-color: rgb(233, 233, 233);
+    border-style: inset;
+}
