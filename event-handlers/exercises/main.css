@@ -1,0 +1,66 @@
+/* <!-- PRACTICE #1
+
+.blue {
+    color: blue;
+  }
+  
+  .large {
+    font-size: 2em;
+  }
+  
+  .bordered {
+    border: 2px dotted purple;
+  }
+  
+  .rounded {
+    border-radius: 10px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #guinea-pig {
+    margin: 50px 0 20px 0;
+    font-family: Helvetica;
+    padding: 5px;
+  }
+  
+  .card {
+    border: 1px dashed darkgoldenrod;
+    padding: 5px;
+    margin: 5px;
+  }
+
+.art {
+    display: flex;
+
+}
+
+  #art--1 {
+    border: 2px solid goldenrod;
+    flex: 50%;
+    height: 50px
+  }
+
+  #art--2 {
+    border: 2px solid darkred;
+    flex: 50%;
+    height: 50px;
+  }
+ */
+
+ /* PRACTICE #2 */
+
+ #container {
+    display: flex;
+    min-height: 1500px;
+  }
+  
+  #audrey {
+    background-color: purple;
+    color: snow;
+    min-height: 100px;
+    width: 50px;
+    position: fixed;
+  }
