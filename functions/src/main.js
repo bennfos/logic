@@ -13,66 +13,65 @@
     // }
 
 
-// PRACTICE #2
-    let bandNumber = 1
+// // PRACTICE #2
+//     let bandNumber = 1
 
 
-    const takeNumber =  (name) => {
-        `${bandNumber++}. ${name}`
-        }
+//     const takeNumber =  (name) => {
+//         `${bandNumber++}. ${name}`
+//         }
 
-    const scum = takeNumber("Galactic Scum")
-    console.log(scum)  // This should print "1. Galactic Scum" in the console
+//     const scum = takeNumber("Galactic Scum")
+//     console.log(scum)  // This should print "1. Galactic Scum" in the console
 
-    const under = takeNumber("Underdogs")
-    console.log(under);
+//     const under = takeNumber("Underdogs")
+//     console.log(under);
 
-    const chem = takeNumber("Chemical Pixies")
-    console.log(chem);
+//     const chem = takeNumber("Chemical Pixies")
+//     console.log(chem);
 
 
 // PRACTICE #3
-    // const hamburger = {
-    // 	name: 'Hamburger',
-    // 	type: 'beef',
-    // 	cooked: false,
-    // }
-    // const zucchini = {
-    // 	name: 'Zucchini',
-    // 	type: 'vegetable',
-    // 	cooked: false,
-    // }
-    // const chickenBreast = {
-    // 	name: 'Chicken Breast',
-    // 	type: 'chicken',
-    // 	cooked: false,
-    // }
-    // const corn = {
-    // 	name: 'Corn',
-    // 	type: 'vegetable',
-    // 	cooked: false,
-    // }
-    // const steak = {
-    // 	name: 'Steak',
-    // 	type: 'beef',
-    // 	cooked: false,
-    // }
+    const hamburger = {
+    	name: 'Hamburger',
+    	type: 'beef',
+    	cooked: false,
+    }
+    const zucchini = {
+    	name: 'Zucchini',
+    	type: 'vegetable',
+    	cooked: false,
+    }
+    const chickenBreast = {
+    	name: 'Chicken Breast',
+    	type: 'chicken',
+    	cooked: false,
+    }
+    const corn = {
+    	name: 'Corn',
+    	type: 'vegetable',
+    	cooked: false,
+    }
+    const steak = {
+    	name: 'Steak',
+    	type: 'beef',
+    	cooked: false,
+    }
 
-    // const foods = [hamburger, zucchini, chickenBreast, corn, steak];
+    const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 
-    // const cookedFood = [];
+    const cookedFood = [];
 
-    // function grill (currentObject) {
-    //     currentObject.cooked = true;
-    //     cookedFood.push(currentObject);
-    // };
+    function grill (currentObject) {
+        currentObject.cooked = true;
+        cookedFood.push(currentObject);
+    };
 
 
-    // foods.forEach(function grill (currentObject) {
-    //     currentObject.cooked = true;
-    //     cookedFood.push(currentObject);
-    // });
+    foods.forEach(currentFood => {
+        grill(currentFood);
+    });
 
-    // console.log(cookedFood)
+    console.log(cookedFood)
 
 

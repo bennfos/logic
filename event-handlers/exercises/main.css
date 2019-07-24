@@ -50,7 +50,7 @@
   }
  */
 
- /* PRACTICE #2 */
+ /* PRACTICE #2
 
  #container {
     display: flex;
@@ -63,4 +63,28 @@
     min-height: 100px;
     width: 50px;
     position: fixed;
-  }
+  } */
+
+
+
+
+
+
+
+
+  /* PRACTICE #3
+  .disabled {
+    background-color: gray;
+}
+
+.enabled {
+    background-color: fuchsia;
+    color: goldenrod;
+} */
+
+
+/* PRACTICE #4 */
+
+.border {
+  border: 2px solid rgba(221, 0, 0, 0.829);
+}

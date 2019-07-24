@@ -76,7 +76,7 @@ const elizabethSanger = {
             email: "bennfos@gmail.com",
             phone: "615927253",
             availability: "M-F, 9-5",
-            activities: "Software Development",
+            activities: ["Software Development", "Chillin"]
         }
     ],
     biography: "Grew up. Got woke. Gonna CHANGE THE WORLD!",
@@ -109,6 +109,10 @@ function addEvent(newEvent) {
     elizabethSanger.calendar.push(newEvent)
 }
 
+function addActivity(newActivity) {
+    elizabethSanger.volunteers.activities
+}
+
 addToImageGallery ("rally", "images/rally.jpg")
 
 changeBiography("Born and raised in Nashville, TN. Grew up. Got woke. Gonna CHANGE THE WORLD!") 
@@ -123,6 +127,7 @@ addVolunteer({
     availability: "M-F, 9-5",
     activities: "Digital marketing",
 })
+
 
 addEvent({
     date: "10/7/2019",

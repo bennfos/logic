@@ -1,4 +1,4 @@
-// <!-- PRACTICE #1
+// // <!-- PRACTICE #1
 
 // let outputEl = document.getElementById("output-target")
 
@@ -121,24 +121,109 @@
 
 
 
-// PRACTICE #2
+// // PRACTICE #2
 
-const audrey = document.getElementById("audrey")
-
-/*
-    Add an event listener to the `document` object to listen
-    for the "scroll" event.
-*/
-audrey.addEventListener("scroll", function () {
-    /*
-        Adjust the width of audrey to be 1/3 the value of
-        `window.scrollY`. No lower than 50px, though.
-    */
-    audrey.style.width = "33% window.scrollY"
+// const audrey = document.getElementById("audrey")
 
 
-    /*
-        Adjust the height of audrey to be 1/4 the value of
-        `window.scrollY`. No lower than 100px, though.
-    */
+// /*
+//     Add an event listener to the `document` object to listen
+//     for the "scroll" event.
+// */
+// document.addEventListener("scroll", function () {
+//     /*
+//         Adjust the width of audrey to be 1/3 the value of
+//         `window.scrollY`. No lower than 50px, though.
+//     */
+//     let x = window.scrollY/3
+//     let y = window.scrollY/4
+//     if (x > 50) {
+//         audrey.style.width = `${x}px`
+//     }
+
+//     /*
+//         Adjust the height of audrey to be 1/4 the value of
+//         `window.scrollY`. No lower than 100px, though.
+//     */
+
+//     if (x > 100) {
+//         audrey.style.height = `${y}px`
+//     }
+// })
+
+
+// // PRACTICE #3
+
+// const flightButton = document.querySelector("#activate-flight")
+// const mindButton = document.querySelector("#activate-mindreading")
+// const xrayButton = document.querySelector("#activate-xray")
+// const allPowersButton = document.querySelector("#activate-all")
+// const noPowersButton = document.querySelector("#deactivate-all")
+
+// const flightPower = document.querySelector("#flight")
+// const mindPower = document.querySelector("#mindreading")
+// const xrayPower = document.querySelector("#xray")
+// const allPowers = document.querySelectorAll(".power")
+
+
+// function oneToRuleThemAll(button, newClass) {
+//     button.addEventListener("click", function (event) {
+//         if (event.target.id.split("-")[1] === "flight") {
+//             flightPower.classList.toggle(newClass)
+//         } else if (event.target.id.split("-")[1] === "mindreading") {
+//             mindPower.classList.toggle(newClass) 
+//         } else if (event.target.id.split("-")[1] === "xray") {
+//             xrayPower.classList.toggle(newClass) 
+//         } else if (event.target.id.split("-")[0] === "activate") {
+//             allPowers.forEach(power => {
+//                 power.classList = newClass
+//             })
+//         } else if (event.target.id.split("-")[0] === "deactivate") {
+//             allPowers.forEach(power => {
+//                 power.classList = newClass
+//             })
+//         }
+//     })
+// }
+
+// oneToRuleThemAll(flightButton, "enabled")
+// oneToRuleThemAll(flightButton, "disabled")
+// oneToRuleThemAll(mindButton, "enabled")
+// oneToRuleThemAll(mindButton, "disabled")
+// oneToRuleThemAll(xrayButton, "enabled")
+// oneToRuleThemAll(xrayButton, "disabled")
+// oneToRuleThemAll(allPowersButton, "enabled")
+// oneToRuleThemAll(noPowersButton, "disabled")
+
+
+
+
+
+// //PRACTICE #4
+
+const textOutput = document.querySelector("#textOutput")
+const textInput = document.querySelector("#text")
+const createButton = document.querySelector("#createButton")
+const deleteButton = document.createElement("BUTTON")
+
+
+
+
+const makeTextComponents = (text) => {
+   return `
+   <section class="border">${text}
+   </section>
+   `
+}
+
+createButton.addEventListener("click", () => {
+    textOutput.innerHTML += makeTextComponents(textInput.value)
+    deleteButton.innerHTML = "Delete";
+    textOutput.appendChild(deleteButton)
+})
+
+deleteButton.addEventListener("click", () => {
+    function remove () {textOutput.removeChild(textOutput.firstElementChild)}
+    remove();
+    textOutput.removeChild(deleteButton)
 })
